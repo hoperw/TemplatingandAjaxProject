@@ -1,0 +1,278 @@
+/*********************
+Name: Hope Watson
+Coding 05
+Purpose: Styles header, home, process, title, and footer HTML documents 
+**********************/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+ * {
+    font-family: 'Urbanist', helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ body, html {
+     height: 100%;
+ }
+
+ /* Header Styles (header.html) */
+
+ #nav-container {
+    background: #161618;
+    width: 100%;
+ }
+
+ #nav-container p {
+    font-family: 'Gloria Hallelujah', cursive, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: whitesmoke;
+ }
+
+.nav-section{
+    padding: 1em;
+}
+
+.nav-section ul li {
+    margin: .2em;
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    padding: .5em;   
+}
+
+li a {
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+/* Home Body Styles (home.html) */
+
+.body-div {
+    min-height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.body-div h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: .8em;
+}
+
+.body-content-container p {
+    line-height: 1.4em;
+    font-size: 1.5em;
+    padding: .5em 1.2em .5em 1.2em;
+}
+
+#home-img {
+    width: 100%;
+}
+
+/* Title Generator Page Styles (title.html) */
+#msg {
+    padding: 1em;;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    color:rgb(214, 71, 71); 
+}
+
+.form-container {
+    padding: 2em;
+    width: 100%;
+}
+
+.form-container p {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+}
+
+label, input {
+    width: 90%;
+    font-size: 1.2em;
+    padding: 3%;
+}
+
+label {
+    text-align: center;
+}
+
+#submit-button {
+    margin: 3% 0 3% 0;
+    padding: 3%;
+    background-color: rgb(125, 204, 118);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+#submit-button:hover {
+    background-color: rgb(115, 190, 108);
+}
+
+#clear-button {
+    background-color: rgb(235, 107, 107);
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+#clear-button:hover {
+    background-color: rgb(214, 71, 71);;
+}
+
+/* Contact Page Styles (contact.html) */
+
+#message-input {
+    width: 90%;
+    margin: 3%;
+    padding: 3%;
+    font-size: 1.2em;
+}
+
+#contact-submit {
+    width: 90%;
+    margin: 3% 0 3% 0;
+    padding: 3%;
+    background-color: rgb(125, 204, 118);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: whitesmoke;
+}
+#contact-submit:hover {
+    background-color: rgb(115, 190, 108);
+}
+
+#contact-clear {
+    width: 90%;
+    padding: 3%;
+    background-color: rgb(235, 107, 107);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+#contact-clear:hover {
+    background-color: rgb(214, 71, 71);;
+}
+
+/* Title Reveal Page Styles (process.html) */
+
+#user-title-message {
+    font-family: 'Gloria Hallelujah', cursive, Arial, Helvetica, sans-serif;
+}
+
+.user-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+#mad-lib-title {
+    font-size: 2em;
+}
+
+#user-image {
+    width: 100%;
+}
+
+.try-again-a, .try-again-button {
+    margin: auto;
+    width: 100%;
+}
+
+.try-again-button {
+    margin: 3% 0 3% 0;
+    padding: 3%;
+    background-color: rgb(125, 204, 118);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: whitesmoke;
+}
+
+/* Footer Styles (footer.html) */
+
+footer{
+    height: 4em;
+    margin: 0;
+    width: 100%;
+    background: #161618;
+}
+
+footer p {
+    padding: .5em;
+    margin: auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Media Queries for Larger Screens */
+
+@media screen and (min-width: 240px) {
+    #nav-container p {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 690px) {
+
+    #nav-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #nav-container p {
+        padding: .5em;
+    }
+
+    .nav-section li {
+        display: inline;
+        padding: .5em;
+
+    }
+
+    #home-img {
+        float: left;
+        width: 40%;
+    }
+    .form-container, .user-message-container {
+        max-width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 860px) {
+
+    .form-container, .user-message-container {
+        max-width: 50%;
+    }
+}

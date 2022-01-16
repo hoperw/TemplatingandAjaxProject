@@ -1,0 +1,35 @@
+<!-- -------------------
+Name: Hope Watson
+Coding 05
+Purpose: Asks user for contact information using form.
+------------------- -->
+<div id="msg">
+
+</div>
+<div class = "form-container">
+    <p>{{contactInstructions}}</p>
+    <form id="email-form" name="email-form">
+
+        <label for="name-input">{{name}}</label>
+        <input name="name" id="name-input" type="text" maxlength="64" placeholder="Name">
+
+        <label for="email">{{email}}</label>
+        <input name="email" id="email-input" type="text" maxlength="64" placeholder="Email">
+
+        <label for="from">{{reenteremail}}</label>
+        <input name="from" id="reenter-email-input" type="text" maxlength="64" placeholder="Re-enter Email">
+
+        <label for="subject">{{subject}}</label>
+        <input name="subject" id="subject-input" type="text" maxlength="64" placeholder="Subject">
+
+        <label for="message">{{message}}</label>
+        <textarea name="message" id="message-input" maxlength="1000" placeholder="Your message here..."></textarea>
+
+        <button id="contact-submit" type="button">{{button1}}</button> 
+        <button id="contact-clear" type="button">{{button2}}</button>  
+
+    </form>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/email.js"></script>
